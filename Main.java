@@ -66,6 +66,14 @@ public class Main {
         System.out.println(listOfBookings.get(1).getToDate());
         System.out.println();
 
+        // alternativně cyklus for:
+
+        for (Booking booking : listOfBookings) {
+            System.out.println(booking.getNumberOfBooking()+" "+booking.getGuestNamesForBooking()+" pokoj.č."+booking.getRoomForbooking()+", od "+booking.getFromDate()+" do "+booking.getToDate());
+        }
+        
+        
+        
     }
 }
 
